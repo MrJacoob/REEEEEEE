@@ -1,0 +1,8 @@
+local list = {
+    "I killed a man you idiots",
+
+}
+
+for index, value in pairs(list) do
+    game:GetService("ReplicatedStorage")["DefaultChatSystemChatEvents"].SayMessageRequest:FireServer(value, "All")
+end
